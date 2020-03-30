@@ -25,14 +25,13 @@
     target: '#sideNav'
   });
 
-
   // DOM Elements
-  const body = document.body;
-  const nav = document.getElementById('sideNav');
-  const toggler = $('#theme-toggler');
+  var body = document.body;
+  var nav = document.getElementById('sideNav');
+  var toggler = $('#theme-toggler');
 
   // Apply the cached theme on reload
-  const theme = localStorage.getItem('theme');
+  var theme = localStorage.getItem('theme');
 
   if (theme) {
     body.classList.add(theme);
